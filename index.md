@@ -1,3 +1,7 @@
+---
+layout: layout.njk
+title: Software ecology
+---
 # Software ecology
 
 npm, conda/pip and dependencies in general are the new fossil fuels.
@@ -13,6 +17,11 @@ Because it's hard accepting that we're writing software in languages that are si
 philosophy.
 
 We don't need supercomplex CPUs with speculative execution.
+
 We need languages/paradigms that produce code which naturally scales to all available cores
 (which don't need to be in the same CPU or even colocated hardware).
-Making multicore a simple for `(i=0; i<100; i++) { sum +=i+1 }` is not trivial for a compiler/runtime, while `seq(0, 100).map(i=> i+1).sum()` is.
+
+
+It's not trivial for a compiler/runtime to make multicore-ready simple `(i=0; i<100; i++) { sum +=i+1 }`
+
+while `seq(0, 100).map(i=> i+1).sum()` is.
