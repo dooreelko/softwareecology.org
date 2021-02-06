@@ -13,27 +13,91 @@
       font-family: sans-serif;
       padding: 1em;
     }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      flex-grow: 10;
+    }
+
+    .main {
+      width: 60%;
+      flex-grow: 8;
+      /* float: left; */
+    }
+
+    .title {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .nav {
+      flex-grow: 1;
+    }
+
+    .nav ul {
+      list-style: none;
+    }
+
+    .footer {
+      flex-grow: 1
+    }
+
+    .footer hr {
+      border: none;
+      border-top: solid 1px #c5c5c37d;
+    }
   </style>
 </head>
 
 <body>
-  <h1>Software ecology</h1>
-<p>npm, conda/pip and dependencies in general are the new fossil fuels.
+  <div class="content">
+    <div class="main">
+      <h1><a class="title" href="/"> Software ecology </a></h1>
+      <p>Package manages like npm, conda/pip and dependencies in general are the new fossil fuels.
 They let us rapidly go forward and they will be the end of us.
-If we don't pay attention to our solutions' dependecy trees and their depths,
+If we don't pay attention to our solutions' dependency trees and their depths,
 what we're deploying is mostly pollution even if serves the moment's business purpose.</p>
-<p>It's not hardware for a long long time anymore.
+<p>For a long time it's not hardware anymore.
 The moment we hit the Moore's limit, instead of actually addressing the problem,
 we went the usual enterprise way of ignoring the problem and
 &quot;just put your SAP into an all-memory system&quot;.
-Because it's hard accepting that we're writing software in languages that are single-core in their design and
-philosophy.</p>
+Because it's hard accepting that we're writing software in languages that are single-core in their design and philosophy.</p>
 <p>We don't need supercomplex CPUs with speculative execution.</p>
 <p>We need languages/paradigms that produce code which naturally scales to all available cores
 (which don't need to be in the same CPU or even colocated hardware).</p>
-<p>It's not trivial for a compiler/runtime to make multicore-ready simple <code>(i=0; i&lt;100; i++) { sum +=i+1 }</code></p>
-<p>while <code>seq(0, 100).map(i=&gt; i+1).sum()</code> is.</p>
+<p>It's not trivial for a compiler/runtime to make multicore-ready simple <code>(i=0; i&lt;100; i++) { sum +=i+1 }</code>
+while <code>seq(0, 100).map(i=&gt; i+1).sum()</code> is.</p>
+<p>Software ecology is a call to software engineers to learn from mistakes humanity
+made against our own planet and start treating software solutions like we start (hopefully)
+treating our planet - reduce the pollution footprint, reduce energy consumption, build sustainable and long term.</p>
 
+    </div>
+    <div class="nav">
+      <ul>
+        <li>
+          <a href="https://github.com/dooreelko/softwareecology.org">
+            <svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1"
+              width="32" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+              </path>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer">
+    <hr />
+    2021+
+  </div>
 </body>
 
 </html>
