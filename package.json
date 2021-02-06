@@ -1,0 +1,11 @@
+{
+  "name": "softwareecology.org",
+  "version": "1.0.0",
+  "description": "Sources for the softwareecology.org",
+  "keywords": [],
+  "author": "",
+  "license": "GPLv3",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1"
+  }
+}
