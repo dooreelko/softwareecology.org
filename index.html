@@ -1,0 +1,38 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software ecology</title>
+  <style>
+    html {
+      background-color: #1b1c1c !important;
+      font-family: sans-serif;
+      padding: 1em;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Software ecology</h1>
+<p>npm, conda/pip and dependencies in general are the new fossil fuels.
+They let us rapidly go forward and they will be the end of us.
+If we don't pay attention to our solutions' dependecy trees and their depths,
+what we're deploying is mostly pollution even if serves the moment's business purpose.</p>
+<p>It's not hardware for a long long time anymore.
+The moment we hit the Moore's limit, instead of actually addressing the problem,
+we went the usual enterprise way of ignoring the problem and
+&quot;just put your SAP into an all-memory system&quot;.
+Because it's hard accepting that we're writing software in languages that are single-core in their design and
+philosophy.</p>
+<p>We don't need supercomplex CPUs with speculative execution.</p>
+<p>We need languages/paradigms that produce code which naturally scales to all available cores
+(which don't need to be in the same CPU or even colocated hardware).</p>
+<p>It's not trivial for a compiler/runtime to make multicore-ready simple <code>(i=0; i&lt;100; i++) { sum +=i+1 }</code></p>
+<p>while <code>seq(0, 100).map(i=&gt; i+1).sum()</code> is.</p>
+
+</body>
+
+</html>
