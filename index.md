@@ -26,3 +26,22 @@ while `seq(0, 100).map(i=> i+1).sum()` is.
 Software ecology is a call to software engineers to learn from mistakes humanity 
 made against our own planet and start treating software solutions like we start (hopefully)
 treating our planet - reduce the pollution footprint, reduce energy consumption, build sustainable and long term.
+
+Software ecology is not about abandoning libraries and frameworks. It's about developing a culture
+of asking questions in a form of "Do I really need ...?" For example
+
+> Do I really need javascript to implement a checkbox?
+
+> Do I really need complex CSS engine?
+
+> Do I really need web-scale no-sql database?
+
+> Do I really need this memory cache product as an ad-hoc message bus?
+
+> Do I really need kubernetes to host a web site?
+
+## Prior art and case studies
+
+- [http://youmightnotneedjquery.com/](http://youmightnotneedjquery.com/)
+
+- [Left-pad saga](https://blog.npmjs.org/post/141577284765/kik-left-pad-and-npm)
