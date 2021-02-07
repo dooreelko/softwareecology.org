@@ -12,11 +12,41 @@
       color: #c5c5c3;
       font-family: sans-serif;
       padding: 1em;
+      font-weight: lighter;
     }
 
     body {
       display: flex;
       flex-direction: column;
+    }
+
+    blockquote {
+      border: none;
+      --border-left: solid 2px #c5c5c3;
+      margin: 0 0 0 8pt;
+      font-style: italic;
+    }
+
+    blockquote>p{
+      margin: 0;
+      margin-bottom: 8pt;
+    }
+
+    blockquote>p::before{
+      content: "„"
+    }
+
+    blockquote>p::after{
+      content: "“"
+    }
+
+    p::before {
+      content: '';
+      padding: 0 0 0 8pt;
+    }
+
+    h1, h2, h3, h4, h5 {
+      font-weight: lighter;
     }
 
     .content {
@@ -79,6 +109,32 @@ while <code>seq(0, 100).map(i=&gt; i+1).sum()</code> is.</p>
 <p>Software ecology is a call to software engineers to learn from mistakes humanity
 made against our own planet and start treating software solutions like we start (hopefully)
 treating our planet - reduce the pollution footprint, reduce energy consumption, build sustainable and long term.</p>
+<p>Software ecology is not about abandoning libraries and frameworks. It's about developing a culture
+of asking questions in a form of &quot;Do I really need ...?&quot; For example</p>
+<blockquote>
+<p>Do I really need javascript to implement a checkbox?</p>
+</blockquote>
+<blockquote>
+<p>Do I really need complex CSS engine?</p>
+</blockquote>
+<blockquote>
+<p>Do I really need web-scale no-sql database?</p>
+</blockquote>
+<blockquote>
+<p>Do I really need this memory cache product as an ad-hoc message bus?</p>
+</blockquote>
+<blockquote>
+<p>Do I really need kubernetes to host a web site?</p>
+</blockquote>
+<h2>Prior art and case studies</h2>
+<ul>
+<li>
+<p><a href="http://youmightnotneedjquery.com/">http://youmightnotneedjquery.com/</a></p>
+</li>
+<li>
+<p><a href="https://blog.npmjs.org/post/141577284765/kik-left-pad-and-npm">Left-pad saga</a></p>
+</li>
+</ul>
 
     </div>
     <div class="nav">
