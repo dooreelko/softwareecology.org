@@ -15,11 +15,41 @@ title: Software ecology
       color: #c5c5c3;
       font-family: sans-serif;
       padding: 1em;
+      font-weight: lighter;
     }
 
     body {
       display: flex;
       flex-direction: column;
+    }
+
+    blockquote {
+      border: none;
+      --border-left: solid 2px #c5c5c3;
+      margin: 0 0 0 8pt;
+      font-style: italic;
+    }
+
+    blockquote>p{
+      margin: 0;
+      margin-bottom: 8pt;
+    }
+
+    blockquote>p::before{
+      content: "„"
+    }
+
+    blockquote>p::after{
+      content: "“"
+    }
+
+    p::before {
+      content: '';
+      padding: 0 0 0 8pt;
+    }
+
+    h1, h2, h3, h4, h5 {
+      font-weight: lighter;
     }
 
     .content {
