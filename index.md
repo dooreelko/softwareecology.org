@@ -27,6 +27,12 @@ Software ecology is a call to software engineers to learn from mistakes humanity
 made against our own planet and start treating software solutions like we start (hopefully)
 treating our planet - reduce the pollution footprint, reduce energy consumption, build sustainable and long term.
 
+There are two main points about the change:
+- Switch to rational use of dependencies (TBD). This is the reduce pollution part of ecology.
+- Switch to new ways of developing scalable software (TBD). This is the switch to environment-friendly energy sources part of ecology.
+
+The TBD part is why this initiative exists.
+
 Software ecology is not about abandoning libraries and frameworks. It's about developing a culture
 of asking questions in a form of "Do I really need ...?" For example
 
@@ -36,9 +42,9 @@ of asking questions in a form of "Do I really need ...?" For example
 
 > Do I really need web-scale no-sql database?
 
-> Do I really need this memory cache product as an ad-hoc message bus?
+> Do I really need this memory cache product as an ad hoc message bus?
 
-> Do I really need kubernetes to host a web site?
+> Do I really need kubernetes to host a website?
 
 ## Prior art and case studies
 
